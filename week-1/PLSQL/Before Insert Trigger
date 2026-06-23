@@ -1,7 +1,0 @@
-CREATE OR REPLACE TRIGGER emp_insert
-BEFORE INSERT ON employees
-FOR EACH ROW
-BEGIN
-    DBMS_OUTPUT.PUT_LINE('New Employee Added');
-END;
-/

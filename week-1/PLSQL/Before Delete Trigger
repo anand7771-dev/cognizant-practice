@@ -1,7 +1,0 @@
-CREATE OR REPLACE TRIGGER emp_delete
-BEFORE DELETE ON employees
-FOR EACH ROW
-BEGIN
-    DBMS_OUTPUT.PUT_LINE('Employee Record Deleted');
-END;
-/

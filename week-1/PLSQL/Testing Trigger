@@ -1,9 +1,0 @@
-INSERT INTO employees(employee_id, first_name)
-VALUES(101,'Anand');
-
-UPDATE employees
-SET first_name = 'Rahul'
-WHERE employee_id = 101;
-
-DELETE FROM employees
-WHERE employee_id = 101;

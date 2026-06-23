@@ -1,4 +1,0 @@
-BEGIN
-    DBMS_OUTPUT.PUT_LINE('Square = ' || square(5));
-END;
-/

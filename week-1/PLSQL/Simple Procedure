@@ -1,6 +1,0 @@
-CREATE OR REPLACE PROCEDURE display_name
-AS
-BEGIN
-    DBMS_OUTPUT.PUT_LINE('My Name is Anand');
-END;
-/
