@@ -1,0 +1,12 @@
+DECLARE
+    rows_updated NUMBER;
+BEGIN
+    UPDATE employees
+    SET salary = salary + 1000
+    WHERE employee_id = 101;
+
+    rows_updated := SQL%ROWCOUNT;
+
+    DBMS_OUTPUT.PUT_LINE('Rows Updated : ' || rows_updated);
+END;
+/

@@ -1,0 +1,9 @@
+DECLARE
+    n NUMBER := 1;
+BEGIN
+    WHILE n <= 5 LOOP
+        DBMS_OUTPUT.PUT_LINE(n);
+        n := n + 1;
+    END LOOP;
+END;
+/

@@ -1,0 +1,21 @@
+DECLARE
+
+    result NUMBER;
+
+BEGIN
+
+    BEGIN
+
+        result := 10 / 0;
+
+    EXCEPTION
+
+        WHEN ZERO_DIVIDE THEN
+            result := 0;
+
+    END;
+
+    DBMS_OUTPUT.PUT_LINE('Result = ' || result);
+
+END;
+/

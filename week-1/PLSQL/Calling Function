@@ -1,0 +1,8 @@
+DECLARE
+    result NUMBER;
+BEGIN
+    result := add_num(10, 20);
+
+    DBMS_OUTPUT.PUT_LINE('Sum = ' || result);
+END;
+/

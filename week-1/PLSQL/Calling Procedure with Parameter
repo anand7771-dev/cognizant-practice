@@ -1,0 +1,4 @@
+BEGIN
+    show_number(10);
+END;
+/

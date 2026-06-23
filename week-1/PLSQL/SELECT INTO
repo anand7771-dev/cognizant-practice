@@ -1,0 +1,11 @@
+DECLARE
+    emp_name VARCHAR2(50);
+BEGIN
+    SELECT first_name
+    INTO emp_name
+    FROM employees
+    WHERE employee_id = 101;
+
+    DBMS_OUTPUT.PUT_LINE(emp_name);
+END;
+/

@@ -1,0 +1,10 @@
+CREATE OR REPLACE FUNCTION add_num(
+    a NUMBER,
+    b NUMBER
+)
+RETURN NUMBER
+AS
+BEGIN
+    RETURN a + b;
+END;
+/

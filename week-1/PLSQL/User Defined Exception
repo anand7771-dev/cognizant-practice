@@ -1,0 +1,18 @@
+DECLARE
+
+    salary NUMBER := -1000;
+    invalid_salary EXCEPTION;
+
+BEGIN
+
+    IF salary < 0 THEN
+        RAISE invalid_salary;
+    END IF;
+
+EXCEPTION
+
+    WHEN invalid_salary THEN
+        DBMS_OUTPUT.PUT_LINE('Salary cannot be negative');
+
+END;
+/

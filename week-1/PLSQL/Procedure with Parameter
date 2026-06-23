@@ -1,0 +1,8 @@
+CREATE OR REPLACE PROCEDURE show_number(
+    num IN NUMBER
+)
+AS
+BEGIN
+    DBMS_OUTPUT.PUT_LINE('Number is ' || num);
+END;
+/

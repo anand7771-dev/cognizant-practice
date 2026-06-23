@@ -1,0 +1,18 @@
+DECLARE
+    emp_name VARCHAR2(50);
+BEGIN
+
+    SELECT first_name
+    INTO emp_name
+    FROM employees
+    WHERE employee_id = 999;
+
+    DBMS_OUTPUT.PUT_LINE(emp_name);
+
+EXCEPTION
+
+    WHEN NO_DATA_FOUND THEN
+        DBMS_OUTPUT.PUT_LINE('Employee not found');
+
+END;
+/
