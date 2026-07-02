@@ -4,6 +4,10 @@
 # Maven build folder
 target/
 
+# Distribution folder
+.dist/
+dist/
+
 # VS Code settings
 .vscode/
 
